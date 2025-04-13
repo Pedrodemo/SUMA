@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <input type="number" id="num1" placeholder="Numero 1">
+        <input type="number" id="num2" placeholder="Numero 2">
+        <button id="sumar">SUMAR</button>
+        <button id="borrar">BORRAR</button>
 
+        <h1> RESULTADO:
+            <span id="resultado">0</span>
+        </h1>
+    </div>    
+    <script src="demo.js"></script>
+    <script>
+        document.getElementById('borrar').addEventListener('click', () => {
+            document.getElementById('num1').value = '';
+            document.getElementById('num2').value = '';
+            document.getElementById('resultado').textContent = '0';
+        });
+    </script>
+</body>
+</html>
